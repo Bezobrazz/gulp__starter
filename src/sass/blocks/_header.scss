@@ -1,0 +1,46 @@
+.header__top-inner {
+  padding: 25px 0 21px 0;
+  min-height: 122px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+.menu__item {
+  display: inline-block;
+}
+.menu__item + .menu__item {
+  padding-left: 50px;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+}
+.header__adress {
+  margin-right: 60px;
+  width: 265px;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../icons/geoposition.svg);
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -10px;
+  }
+}
+.user-list {
+  display: flex;
+  gap: 10px;
+}
+.header__bottom {
+  min-height: 53px;
+  padding: 15px 0 14px 0;
+  background: #f0f0f4;
+}
+.menu-categories {
+  display: flex;
+  justify-content: space-between;
+}

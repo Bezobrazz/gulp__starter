@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
+  color: #2f3035;
 }
 .menu__item {
   display: inline-block;
@@ -34,13 +35,64 @@
 .user-list {
   display: flex;
   gap: 10px;
+  margin-right: 20px;
 }
 .header__bottom {
+  max-width: 1200px;
+  margin: 0 auto;
   min-height: 53px;
-  padding: 15px 0 14px 0;
   background: #f0f0f4;
 }
 .menu-categories {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  &__item {
+    position: relative;
+  }
+  &__link {
+    position: absolute;
+    padding: 15px 0 14px;
+    font-weight: 400;
+    color: #2f3035;
+    left: 50%;
+    transform: translateX(-50%);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      left: auto;
+      right: 0;
+      bottom: 0;
+      background-color: $main-color;
+      height: 3px;
+      transition: all 0.5s;
+    }
+    &:hover {
+      font-weight: 600;
+    }
+    &:hover::before {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+}
+
+.basket {
+  position: relative;
+  &__num {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: $main-color;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    bottom: -10px;
+    right: -15px;
+  }
 }

@@ -1,0 +1,9 @@
+.banner-section {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__slider {
+    max-width: 870px;
+  }
+}

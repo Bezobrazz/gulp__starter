@@ -51,6 +51,7 @@
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
   &:hover {
     text-decoration: none;
     color: inherit;
@@ -83,3 +84,4 @@ body {
 
 @import "blocks/header";
 @import "blocks/slider";
+@import "blocks/search";

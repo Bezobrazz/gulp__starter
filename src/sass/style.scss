@@ -58,6 +58,10 @@ a {
   }
 }
 
+p {
+  margin: 0;
+}
+
 ul,
 li {
   margin: 0;
@@ -85,3 +89,5 @@ body {
 @import "blocks/header";
 @import "blocks/slider";
 @import "blocks/search";
+@import "blocks/categories";
+@import "blocks/products";
